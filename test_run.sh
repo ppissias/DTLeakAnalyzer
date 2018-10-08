@@ -1,0 +1,1 @@
+java -jar dtleakanalyzer.jar resources/test_files/dtrace.array.log.mlg.int.6.8.50.2.dem resources/test_files/dtrace.array.log.mlg.int.6.8.50.2.dem.report
