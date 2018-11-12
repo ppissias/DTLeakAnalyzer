@@ -18,21 +18,21 @@ Overall there are **4 basic modes of usage**:
 - **Process memory growth analysis** 
 
 In summary it provides the following features 
-- **Single memory allocator tracing session**  
--- presentation of call stacks that appear to be causing memory leaks 
--- heuristic analysis for pointing out strongly suspected memory leaks 
--- presentation of call stacks that appear to be freeing memory wrongly 
--- heuristic analysis for pointing out stringly suspected wrong free call stacks 
--- identification of double free operations
--- presentation of a combined call stack where the potential memory leaks are identified
-- **Combination of multiple memory allocator tracing sessions** (on top of the features above)
--- combined presentation of the occurence of suspected call stacks for all trace files
--- heuristic analysis for pointing out very strongly suspected call stacks
-- **Combination of multiple short-term and long-term traces** (on top of the features above)
--- heuristic analysis of long term traces
-- **Process memory growth analysis**
--- presentation of call stacks that caused memory growth, including occurences and total size
--- presentation of a combined call stack where all calls that caused memory growth are presented 
+* **Single memory allocator tracing session**  
+	* presentation of call stacks that appear to be causing memory leaks 
+	* heuristic analysis for pointing out strongly suspected memory leaks 
+	* presentation of call stacks that appear to be freeing memory wrongly 
+	* heuristic analysis for pointing out stringly suspected wrong free call stacks 
+	* identification of double free operations
+	* presentation of a combined call stack where the potential memory leaks are identified
+* **Combination of multiple memory allocator tracing sessions** (on top of the features above)
+	* combined presentation of the occurence of suspected call stacks for all trace files
+	* heuristic analysis for pointing out very strongly suspected call stacks
+* **Combination of multiple short-term and long-term traces** (on top of the features above)
+	* heuristic analysis of long term traces
+* **Process memory growth analysis**
+	* presentation of call stacks that caused memory growth, including occurences and total size
+	* presentation of a combined call stack where all calls that caused memory growth are presented 
 
 More information on the usage and capabilities of DtLeakAnalyzer can be found [in the DtLeakAnalyzer usage manual](resources/DtLeakAnalyzer.pdf)
 
