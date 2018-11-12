@@ -22,16 +22,16 @@ In summary it provides the following features
 	* presentation of call stacks that appear to be causing memory leaks 
 	* heuristic analysis for pointing out strongly suspected memory leaks 
 	* presentation of call stacks that appear to be freeing memory wrongly 
-	* heuristic analysis for pointing out stringly suspected wrong free call stacks 
+	* heuristic analysis for pointing out strongly suspected wrong free call stacks 
 	* identification of double free operations
 	* presentation of a combined call stack where the potential memory leaks are identified
 * **Combination of multiple memory allocator tracing sessions** (on top of the features above)
-	* combined presentation of the occurence of suspected call stacks for all trace files
+	* combined presentation of the occurrence of suspected call stacks for all trace files
 	* heuristic analysis for pointing out very strongly suspected call stacks
 * **Combination of multiple short-term and long-term traces** (on top of the features above)
 	* heuristic analysis of long term traces
 * **Process memory growth analysis**
-	* presentation of call stacks that caused memory growth, including occurences and total size
+	* presentation of call stacks that caused memory growth, including occurrences and total size
 	* presentation of a combined call stack where all calls that caused memory growth are presented 
 
 More information on the usage and capabilities of DtLeakAnalyzer can be found [in the DtLeakAnalyzer usage manual](resources/DtLeakAnalyzer.pdf)
@@ -47,14 +47,14 @@ i.e.
 ``` 
 (press ctrl^C when we are done) 
 
-then we tun the trace analysis program 
+then we run the trace analysis program 
 ``` 
 > java -jar dtleakanalyzer.jar -f memalloc trace-memalloc.log trace-memalloc.log.report 
 ``` 
 The output of the trace analysis tool for this case is:
 ``` 
-Started memory allocator analysis for file memalloc trace-memalloc.log on:Thu Nov 08 08:03:54 CET 2018
-Finished memory allocator analysis for file memalloc trace-memalloc.log on:Thu Nov 08 08:04:05 CET 2018
+Started memory allocator analysis for file trace-memalloc.log on:Thu Nov 08 08:03:54 CET 2018
+Finished memory allocator analysis for file trace-memalloc.log on:Thu Nov 08 08:04:05 CET 2018
 Call statistics
 Found 142511 malloc calls
 Found 0 calloc calls
@@ -85,7 +85,7 @@ The D scripts do not need any compilation.
 
 Compiling the java source code to produce the trace analysis executable:
 
-Extract the reporitory and run the compile.bat or .sh 
+Extract the repository and run the compile.bat or .sh 
 
 ```
 
