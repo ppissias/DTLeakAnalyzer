@@ -5,7 +5,7 @@ A tool for supporting identifying memory leaks with dtrace
 ### Overview
 
 This tool is intended to be used in supporting memory leak investigations with dtrace. 
-dtrace (also known as dynamic tracing) is available for Solaris, FreeBSD, OSx and potentially other operating systems.
+dtrace (also known as dynamic tracing) is available for Solaris, FreeBSD, macOS and potentially other operating systems.
 
 DtLeakAnalyzer consists of
 - a **set of D scripts** (that attach to a process and start tracing)
