@@ -1,0 +1,15 @@
+for REP in 1 2 3 4 5; do
+	for SLTIME in 10 20 40 ; do
+		echo tracing process:$1 for :$SLTIME seconds. Repetition:$REP
+
+		./trace-memalloc.d $1 > ./trace-memalloc.$SLTIME.$REP &
+		dtracepid=$!
+
+		echo started dtrace process, pid:$dtracepid	
+		sleep $SLTIME
+		kill -SIGINT $dtracepid
+		echo sent interrupt signal to dtrace process
+		wait $dtracepid
+		echo dtrace finished
+	done	
+done
